@@ -11,60 +11,96 @@ with periods of "uptime" and "downtime" corresponding to the Drill being on and 
 
 Players are challenged by action and events during "uptime" with increasing difficulty scaling
 as the round progresses, and given breathing room and time to roleplay during "downtime".
+The intent is to have a cycle between an actively hazardous period, a 'station repairs' period,
+and a 'relaxation' period for the crew - cycling between action focus and roleplay focus. 
 
 Gameplay takes place underground, on a mining station embedded in solid rock.
-The station is surrounded by procedurally generated caverns serving as space for hostile
-mobs to spawn out of view of players, and assault the station.
-Rounds are a survival challenge, the crew of the station should be subject to permadeath,
-with rounds having an end-condition of no humanoid crew left standing.
-The primary goal of a round, another end-condition, is achieving a set profit quota for the station,
-achieved through selling the output of the Drill the station is built around.
-There should be a primary "target product" the drill produces, such as Phoron, that has a sell value
-far surpassing anything else, with occasional use on station. Other output from the drill should
-be sellable, but have primary use in sustaining the station.
-Once the shift profit quota has been reached, command may authorize an evacuation pod to drop
+The map is a large arena of destructible rock, with an outer layer of indestructible walls,
+with the station embedded in the center, surrounded by procedurally generated caverns
+serving as an out of view spawn area for hostile mobs.
+
+Instead of a continuous event scheduler gamerule, events are called by the Drill while in operation.
+The intensity and difficulty of hazardous threats ramps up during the round. With a survival
+aspect looming over the crew. Subject to permadeath, the elimination of all crew serving as one
+possible round end condition.
+
+The overarching goal of a round is achieving a set profit quota, reaching a population dependent
+balance in the station budget, achieved through selling the output of the Drill.
+
+There is a "target product" the Drill produces (diegetically the reason the station is built)
+in the form of Phoron, that has a sell value far surpassing anything else the Drill produces,
+with occasional use on station. Other output from the Drill can be sold for less profit,
+but is primarily used in sustaining the station.
+Once the shift profit quota has been reached, Command may authorize an evacuation pod to drop
 down to the station's level, and subsequently take off, ending the round.
 
-While the Drill is in operation, it causes events that pose hazards to the station crew,
-such as structural faults in the Drill itself, structural faults in the station, and attracting
-the attention of HTN and ghostrole mobs that antagonize the crew.
-The drill must be supplied with HV power mandatory to drive operations, and ventilation gas to
-manage it's hazard. If supplied with insufficient power, the drill shuts down. If supplied with
-insufficient ventilation, the drill starts venting hazardous gas into the room it's in.
+The gameplay depth comes from managing, modifying, and living around the Drill. It produces
+vital resources necessary to sustain the station - but the crew must deal with it's inherent
+danger, and adapt to mid-round changes to it's setup and supply routes from the Drill to their
+destinations which have fixed locations.
+
+The station is a closed resource loop, with the exception of requisitions and sales.
+Resources and waste products must be managed and recycled onstation, with minimal disposal methods.
+
+Hazards to the crew include structural faults in the Drill itself, structural faults in the station,
+hostile HTN and ghostrole mobs attracted by the Drill, and failures in other station infrastructure
+such as power engines or other vital machinery.
+
+The core gameplay loop does not rely on the presence of antagonists. The base gamemode is Survival,
+where the whole crew works together to achieve the goal of Surviving and reaching the profit quota.
+Additional gamemodes can introduce antagonists to modify the core gameplay experience,
+but it comes as an optional, auxiliary component to the gameplay.
 
 
 *******************************
 Drill mechanical specifications
 *******************************
 
-The Drill must alternate between phases of activity and inactivity.
+The Drill constantly alternates between phases of activity and inactivity.
 It has a minimum cooldown of 15 minutes between phase change, and automatically switches phase
 after 30 minutes. Between the 15 to 30 minute interval Command can choose to start/stop it early.
 
-Instead of a scheduler gamerule (BasicStationEventScheduler/RampingEventScheduler),
+While the Drill is active, it calls event gamerules that threaten the station and it's structure,
 mid-round events are triggered by the Drill during the active phase.
+The intensity and volume of some gamerules scales up as the round progresses; incentivising
+resource management by the crew, and upgrading the Drill to reach the profit quota sooner.
 
-The Drill is built similarly to an upstream AME, with a Drill Body functionally identical to
-AME shielding. The Drill's functionality resides in Components and Ports adjacent to the body.
-The Computer Control Component has crew interfaces including a large screen, it provides status
-information and serves as the control panel for early start/stop for Command.
-Input ports must be placed on corner tiles of the Drill body -
-Output ports must be placed on edge tiles of the drill body, with a core tile behind it.
-The exceptions are the Computer Control Component, and a unique Universal Power Input,
-which are meant to be pre-mapped.
-The Drill body, Computer Component, and a set of pre-mapped ports are immutable and indestructible.
-Map flavor and challenge (in regards to engineering gameplay) is expressed through the preset
-configuradion of the Drill, and it's distance to the destination of it's products.
-There are 3 tiers of most Ports. A higher tier means a higher the throughput and resource consumption.
-Input ports are comprised of Power and Gas inputs -
-Output ports are comprised of Phoron, Gas, Reagent, Ore, and Miscellaneous outputs.
+The Drill functionally can be compared to an AME from upstream, consisting of 2 (kinds of) parts.
+A Drill body, similar to AME shielding - and attached modules & ports, similar to AME controllers.
+The Drill has many different Input and Output ports, as well as a discrete Computer Control Module.
+Input ports must be adjacent to body corner tiles, and output ports must be adjacent to edge tiles
+with a core tile behind it. With the exception of the computer module & a roundstart power input,
+which work adjacent to any tile.
 
-All ports have a power cost & ventilation demand, except inputs which don't cost their input.
+The map starts with a pre-mapped Drill assembly with a configuration immutable during the round.
+Engineers can add additional parts onto the Drill assembly to increase it's productivity midround.
+The body, computer, basic power input, and premade outputs are indestructible and cannot be moved
+or modified, the "flavor" and unique challenge in a map comes from it's configuration of the Drill
+and destination infrastructure, and possible ways to bulldoze the station to make supply routes.
 
-The drill can be upgraded by Engineers during the round, with an increased challenge in demands
-and risk of failure, and a high material cost for new ports, in exchange for an increase in
-outputs for resources and profits.
+The Computer Control Module serves as a console through which crew can interface with the Drill,
+see it's parameters/data readouts, and engage the manual start/stop.
 
-***********************************************************************************
-It's 22:53 as I'm writing this line and my efficiency at writing is falling rapidly
-***********************************************************************************
+Input ports include Power and Gas input required for power supply and ventilation. Every connected
+port has a resource demand, except input ports which do not demand what they're supplying.
+Input ports are limited by a 'choke' on the wattage & gas volume they can supply to the Drill.
+
+Output ports include Phoron, Ore, Gas, Reagent, and Miscellaneous outputs.
+Phoron ports output Phoron into discrete Phoron Barrels connected to them.
+Ore ports output chunks of ore onto conveyor belts.
+Gas ports output spent ventilation/exhaust gasses, and mined gases, configurable to send specific
+gas to specific pipe layers attached.
+Reagent ports output reagents to an internal buffer, which can be transfered to storage tanks.
+Miscellaneous ports spit out odds and ends into disposal pipes.
+
+Most port types have 3 tiers, a higher tier corresponding to a higher throughput & resource demand.
+Pre-mapped, indestructible ports are discrete, but correspond to Tier 2 of their type.
+
+New ports come at a high material cost, increased challenge with their demands, and must be
+researched before thier machine boards can be printed. Drill ports use a discrete, directional
+machine frame separate from the generic machine frame for everything else.
+
+The Drill, and destinations for it's outputs such as the Requisition/Sale pad, power engines, et alii
+are practically or literally immobile, to create depth and challenge in midround modifications to
+supply routes from the Drill and back.
+
