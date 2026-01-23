@@ -1,1 +1,79 @@
-To be written.
+===============================
+Drill Station department design
+===============================
+As envisioned by arenaconspiracy
+
+
+Each department on the station is responsible for sustaining the station and/or it's crew.
+The roles of every department are highly distinct and largely non-overlapping.
+Crew members are limited to their own role by the amount of job-related items they can carry
+on their person.
+
+
+
+*************************************
+Operations Department (working title)
+*************************************
+The Operations department is responsible for working with & around the Drill and it's products.
+It closely resembles a mixture of SS14 Engineering and Cargo in it's function.
+
+Operations is comprised of Maintenance Technicians [MTs] (analogue to station engineers),
+Supply Technicians [STs] (analogue to cargo technicians), and Director of Operations [DO] as the
+department head.
+MTs are responsible for maintaining & upgrading the Drill, handling it's waste products,
+fixing & modifying the station, and maintaining the station power.
+STs are responsible for handling the Drill's desired products, handling requisitions & sales,
+and ensuring the departments are supplied during the round.
+The DO is responsible for leading Operations, coordinating the staiton's needs with other Command,
+and being one of the two people authorized to early start/stop the drill (outside of skeleton crews).
+Operations is expected to modify the station to the whims of the Drill in the name of profits,
+the DO generally being considered second in command on the station.
+
+MTs should be expected to attend to the Drill during uptime, and to the power engines during downtime.
+The station should experience semi-frequent structural faults during the round to encourage MTs to
+attend to them in miscellaneous locations, bringing them away from their other responsibilities.
+MTs will be expected to bulldoze structures and departments near the Drill for upgrades, and to
+pave new supply lines between it and sales pads, atmospherics, and other immovable installations.
+
+STs should be expected to deliver supplies between departments, make sales of Phoron and other surplus
+at the Sales Pad in their area, purchase requisitions using the station budget and deliver them.
+STs should be required to approach the Drill to do their job, to process it's outputs, and subject
+themselves to the hazards that come from the drill's operation.
+
+The DO should be expected to command MTs on modifications to make, evaluate when requisitions are
+worth cutting into the station budget, and coordinate resource use between departments. The DO is
+expected to be second in command to the Captain* of the station in an emergency. The DO should not
+be expected to carry the tools or perform the duties of MTs under normal circumstances, but should
+be free to do so in emergencies.
+
+*Captain analogue from SS14. Name undecided as of yet.
+
+
+The station's power supply should be provided by relatively simple power engines, to shift depth
+from the engines to the Drill.
+Power engines should follow a basic schema of Fuel In -> Power & Waste out.
+Continous operation of power engines should produce waste products and environmental hazards in
+their immediate area, with guaranteed failure states if left unmaintained for too long.
+Power engines should be immobile practically (extensive waste management infrastructure which
+takes up space) or immobile totally (cannot be deconstructed or unanchored)
+
+
+******************
+Medical Department
+******************
+
+*******************
+Security Department
+******************
+
+*******************
+Research Department
+*******************
+
+******************
+Service Department
+******************
+
+******************
+Command Department
+******************
