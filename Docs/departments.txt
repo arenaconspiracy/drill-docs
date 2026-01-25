@@ -6,9 +6,13 @@ As envisioned by arenaconspiracy
 
 Each department on the station is responsible for sustaining the station and/or it's crew.
 The roles of every department are highly distinct and largely non-overlapping.
-Crew members are limited to their own role by the amount of job-related items they can carry
-on their person.
 
+Crew members are limited to their own role by the amount of job-related items they can carry
+on their person. Every role should have a set of standard belt & pocket storage they are mechanically
+encouraged to keep 100% of the time, and be vital to their duties. Job equipment should be limited,
+starting in the job's locker, replacable at departmental lathes at an exorbitant material price.
+Death is permanent. Losing a crew member should mean a tangible increase on the strain in their
+department, as departmental labor cannot be multitasked.
 
 
 *************************************
@@ -25,7 +29,7 @@ fixing & modifying the station, and maintaining the station power.
 STs are responsible for handling the Drill's desired products, handling requisitions & sales,
 and ensuring the departments are supplied during the round.
 The DO is responsible for leading Operations, coordinating the staiton's needs with other Command,
-and being one of the two people authorized to early start/stop the drill (outside of skeleton crews).
+and being one of the two people authorized to early start/stop the Drill (outside of skeleton crews).
 Operations is expected to modify the station to the whims of the Drill in the name of profits,
 the DO generally being considered second in command on the station.
 
@@ -38,7 +42,7 @@ pave new supply lines between it and sales pads, atmospherics, and other immovab
 STs should be expected to deliver supplies between departments, make sales of Phoron and other surplus
 at the Sales Pad in their area, purchase requisitions using the station budget and deliver them.
 STs should be required to approach the Drill to do their job, to process it's outputs, and subject
-themselves to the hazards that come from the drill's operation.
+themselves to the hazards that come from the Drill's operation.
 
 The DO should be expected to command MTs on modifications to make, evaluate when requisitions are
 worth cutting into the station budget, and coordinate resource use between departments. The DO is
@@ -46,25 +50,84 @@ expected to be second in command to the Captain* of the station in an emergency.
 be expected to carry the tools or perform the duties of MTs under normal circumstances, but should
 be free to do so in emergencies.
 
-*Captain analogue from SS14. Name undecided as of yet.
+*Captain analogue from SS14. Name undecided as of writing.
 
 
 The station's power supply should be provided by relatively simple power engines, to shift depth
 from the engines to the Drill.
-Power engines should follow a basic schema of Fuel In -> Power & Waste out.
 Continous operation of power engines should produce waste products and environmental hazards in
 their immediate area, with guaranteed failure states if left unmaintained for too long.
 Power engines should be immobile practically (extensive waste management infrastructure which
 takes up space) or immobile totally (cannot be deconstructed or unanchored)
 
+Sales and requisitions happen on an immobile Requisitions Pad, sales are winched up and requisitions
+are dropped down in crates. Purchased crates have the potential to crush things they land on.
+Purchases using the unified station budget cut into the profit quota, thereby delaying the round
+end condition. It should be a challenge to evaluate what purchases are worth cutting into profits.
+
 
 ******************
 Medical Department
 ******************
+The Medical department is responsible for keeping the station's crew in good health.
+Crew deaths are permanent. Resources are at a premium. Time until next cycle is finite.
+
+(this document assumes Offmed or a similar medical system is implemented)
+
+Medical is comprised of Nurses, Surgeons, Paramedics, Chemists, and the Chief Medical Officer (CMO).
+Nurses are responsible for stabilizing patients & treating minor damage, Surgeons are responsible
+for surgery & major damage, the Paramedic is retrieves and moves injured crew, the Chemists
+synthesize medicine for the Medbay & other uses, and the CMO directs the department.
+
+The individual medical roles should be mechanically encouraged to separate their duties.
+A sufficiently advanced medical system creates a divide between stabliziation/healing/aftercare
+on it's own, but additional means should be employed, such as Surgeons getting belts with surgical
+tools; Nurses getting belts that hold bottles, syringes, injectors, et alii; rollerbeds being too
+bulky to store with the exception of a specialized Paramedic belt; the Chemist workflow being
+sufficiently involved; et cetera.
+
+The supplies in the Chemistry lab should be very limited. The round should start with enough to
+stock the bay with a minimal supply of basics that last the Medbay a mid-to-bad first active period.
+Chemists should be expected to process the output of the Drill to source more precursors to for
+producing more medicine and other necessary reagents, grinding ores and processing output reagents
+such as crude oil into usable precursors.
+
 
 *******************
 Security Department
-******************
+*******************
+The Security department is responsible for neutralizing threats from the caverns assaulting the
+station, and arresting crew members breaking the law.
+
+Security consists of Security Officers, the Warden, and the Head of Security (HoS).
+Security Officers are expected to front the defense of the station against hostile mobs & arrest
+crew members breaking the law, the Warden is expected to oversee inmates & manage printing supplies,
+and the Head of Security commands the department.
+
+As threats to the station are nearly everpresent, locking away big guns in an armory is less important.
+Instead, focus is placed on personal-carry weapons, with frequent necessary ammo restocks at a lathe.
+
+Due to the scarcity and cost of medical treatment, security is encouraged to use nonlethal tools
+above all else when performing arrests, and are highly liable for crossfire or unnecessary damage.
+
+Security members are all given a standard issue set of a combat knife, a sidearm with a holster,
+and a small pouch for sidearm magazines. As well as a choice of a major weapon surpassing the
+sidearm and weapons available to anyone else. Starting available options should include 1 option
+for each brute damage type, e.g. a machete (slash), a sledgehammer (blunt), and a bulky shotgun
+(piercing). Other weapons could be unlockable through research, acting as upgrades and filling new
+niches with tradeoffs and high material cost.
+
+Hostile mobs should have a high diversity, with certain enemies having notable  mild, major,
+resistances and vulnerabilities to damage types, encouraging security officers to diversify their
+choice of weapon across the security force and between rounds.
+Security should have a high, constant material drain for new ammunition and other supplies, acting
+as the primary destination of steel from Operations.
+
+Personal carry should let you keep barely enough ammunition to last a particularly intense uptime,
+encouraging constant restocks & the viability of melee options. Ammo boxes should have a notably
+higher do-after filling magazines than upstream & only let you replenish one magazine at a time,
+to further restrict carrying ammunition on your person.
+
 
 *******************
 Research Department
