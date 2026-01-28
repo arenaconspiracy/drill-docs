@@ -77,9 +77,9 @@ Crew deaths are permanent. Resources are at a premium. Time until next cycle is 
 (this document assumes Offmed or a similar medical system is implemented)
 
 Medical is comprised of Nurses, Surgeons, Paramedics, Chemists, and the Chief Medical Officer (CMO).
-Nurses are responsible for stabilizing patients & treating minor damage, Surgeons are responsible
-for surgery & major damage, the Paramedic is retrieves and moves injured crew, the Chemists
-synthesize medicine for the Medbay & other uses, and the CMO directs the department.
+Nurses are responsible for stabilizing patients & treating minor damage. Surgeons are responsible
+for surgery & major damage. The Paramedic  retrieves and moves injured crew. The Chemists
+synthesize medicine for the Medbay & other uses. The CMO directs the department.
 
 The individual medical roles should be mechanically encouraged to separate their duties.
 A sufficiently advanced medical system creates a divide between stabliziation/healing/aftercare
@@ -103,8 +103,8 @@ station, and arresting crew members breaking the law.
 
 Security consists of Security Officers, the Warden, and the Head of Security (HoS).
 Security Officers are expected to front the defense of the station against hostile mobs & arrest
-crew members breaking the law, the Warden is expected to oversee inmates & manage printing supplies,
-and the Head of Security commands the department.
+crew members breaking the law. The Warden is expected to oversee inmates & manage printing supplies.
+The Head of Security commands the department.
 
 As threats to the station are nearly everpresent, locking away big guns in an armory is less important.
 Instead, focus is placed on personal-carry weapons, with frequent necessary ammo restocks at a lathe.
@@ -138,7 +138,33 @@ Research Department
 ******************
 Service Department
 ******************
+The Service deparment is responsible for maintaining the station's morale and padding out downtime.
+The claustrophobic underground would drive workers mad without a respite.
+
+Service consists of Chefs, Bartenders, Janitors, the Clown, and the Service Manager (SM).
+Chefs are responsible for growing crops, turning hostile mobs into food, and preparing meals.
+Bartenders are responsible for bar tending. Janitors are responsible for cleaning the station.
+The Clown does clown things. The Service Manager commands the department.
+
+Holding a more roleplay centric role, Service is more active during downtime, facilitating social
+interactions to contrast the dangerous and grueling work of other departments during uptime.
+Service roles should have substantial enough mechanics and impactful enough duties to necessitate
+belts & pouches carried at all times. Service roles should not be able to 'fill in gaps' in staffing
+by multi-tasking with other department's gear.
+
 
 ******************
 Command Department
 ******************
+The head of all other departments collectively form the Command department, additionally headed by
+the Site Overseer (SO) holding authority over the station.
+
+Command members should be expected to consistently communicate and closely negotiate resource use
+accross the departments. The SO should be expected to ensure departments are adequately performing and
+working in tandem through oversight, doing work manually only in case of emergency.
+
+The SO and DO have the authority to manually start/stop the Drill after 15 minutes in either state,
+colluding with the entire crew to determine when starting/stopping is in the crew's best interests.
+
+The SO should be able to defend themselves individually, but not assist in defense on the frontline.
+Potentially achieved with a high burst, low sustain weapon, with hard to carry ammo, like a revolver.
