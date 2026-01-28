@@ -1,8 +1,7 @@
 =========================================
 Drill Station (working title) core design
 =========================================
-as envisioned by arenaconspiracy
-subject to override
+Written arenaconspiracy
 
 
 The concept for Drill Station came from a wish for non antag-driven roundflow,

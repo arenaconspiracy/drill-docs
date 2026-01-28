@@ -1,23 +1,25 @@
 ===============================
 Drill Station department design
 ===============================
-As envisioned by arenaconspiracy
+Written by arenaconspiracy
 
 
-Each department on the station is responsible for sustaining the station and/or it's crew.
-The roles of every department are highly distinct and largely non-overlapping.
+Each station department is tasked with unique, largely non-overlapping duties.
+Every crew member has a functionally identical backpack item, and each role has a standard issue
+gearing consisting of a belt slot item and 2 pocket slot pouches necessary to perform their job,
+intended to be worn 100% of the time. Crew members are limited to their role by the amount of 
+job-related gear they can carry on their person, with personal storage being at a premium.
 
-Crew members are limited to their own role by the amount of job-related items they can carry
-on their person. Every role should have a set of standard belt & pocket storage they are mechanically
-encouraged to keep 100% of the time, and be vital to their duties. Job equipment should be limited,
-starting in the job's locker, replacable at departmental lathes at an exorbitant material price.
+All role specific gear, including functional clothing should start in the respective job's locker,
+and crew members should spawn with a minimum of cosmetic clothing and a backpack.
+
 Death is permanent. Losing a crew member should mean a tangible increase on the strain in their
 department, as departmental labor cannot be multitasked.
 
 
-*************************************
-Operations Department (working title)
-*************************************
+*********************
+Operations Department
+*********************
 The Operations department is responsible for working with & around the Drill and it's products.
 It closely resembles a mixture of SS14 Engineering and Cargo in it's function.
 
